@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Your Name - Portfolio</title>
+<style>
+body
+{
+font-family:Times New Roman",serif;
+margin:0;
+padding:0;
+background-color:#f0f0f0;
+}
+header
+{
+background-color:#333;
+color:#fff;
+text-align:center;
+padding:2rem 0;
+position:relative;
+}
+.header-content h1
+{
+font-size:2.5 rem;
+}
+.profile-picture{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+position:absolute;
+top:75px;
+left:75px;
+}
+footer{
+text-align:center;
+padding:1rem 0;
+background-color:#333;
+color:#fff;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<img src="berlin.jpg"alt="Your Profile Picture"class="profile-picture">
+<h1>Berlin R K</h1>
+<p>BCA Student</p>
+</div>
+</header>
+<p class="header">Education : </p>
+<ul>
+<li>School : Yettacode Higher Secondary School Yettacode. </li>
+<li>College : Nesamony Memorial Christian College Marthandam. </li>
+</ul>
+<p class="header">Interest : </p>
+<ul>
+<li>Computer<li>Listening Music</li>
+</ul>
+<p class="head">Skills : </p>
+<ul>
+<li>Web Design with HTML&CSS</li>
+</ul>
+<p class="head">Extracurriculars : </p>
+<ul>
+<li>Red Cross</li>
+</ul>
+</div>
+<footer>
+<center>
+<p>&copy;2023 Berlin R K</p>
+</footer>
+<script>
+document querySelectorAll('a[href ^="#"]').forEach(anchor=>{
+anchor addEventListener('click',function(e){
+e.preventDefault();
+const targetId=this.getAttribute('bref').substring(1);
+const targetElement=document getElementById(targetId);
+if(targetElement){
+window.scrollTo({
+top targetElementoffSetTop,behavior 'smooth';
+});
+}
+});
+});
+</script>
+</body>
+</html>
+
+
